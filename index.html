@@ -1,63 +1,141 @@
 <!DOCTYPE html>
-<html>
-	
-<head> 
-	<title> Satyam Gupta </title> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link href="style.css" type="text/css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
-		crossorigin="anonymous"></script>
+<html lang="en">
+<head>
+    <title> Satyam Gupta </title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Satyam Gupta's Portfolio"/>
+    <meta name="author" content="Satyam Gupta"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
 </head>
-
 <body>
-
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>                        
-			</button>
-			<a class="navbar-brand" href="index.html">Satyam Gupta</a>
-		  </div>
-		  <div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-			  <li class="dropdown">
-				  <li><a href="#">About Me</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="https://www.github.com/satyam19946">Github</a></li>
-				  <li><a href="https://www.linkedin.com/in/satyam19946">LinkedIn</a></li>
-				  <li><a href="./contact.html">Contact Me</a></li>
-				</ul>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-
-	<img id="Profile-image" src="Images/backgroundHome.jpg" alt="Satyam Gupta">
-	<br> A pic of me from 2018 when I visited the Niagra Falls.
-	<div class="container">
-		<h1> Hello! </h1>
-		<p style="font-size: 20px;"> I am a Junior Computer Science Major (3.79/4) at UCSD interested in Software Engineering and Artificial Intelligence. </p>
-		<p style="font-size: 20px;"> I have a logical approach and try to work an optimal solution on technical as well as non-technical problems. I have a demonstrated experience in my interests with projects ranging from a Huffman Encoder/Decoder implementation in C++ using STL to creating a generative Neural Network using LSTMs to generate Lo-fi music. On top of that, I have a good understanding of Machine Learning fundamentals and a strong grasp on the running time and space complexities of Data-Structures and Algorithms (A+ in related CSE upper division courses), and using the appropriate ones, I try to produce clean, fast, and scalable code. </p>
-		<p style="font-size: 20px;"> Other than my technical skills, my hobbies include reading murder-mystery novels (And then there none by Agatha Christie is my favorite book), solving programming problems (Leetcode/Hackerrank), listening to AI Podcasts(Lex Fridman's are my go-to), and playing competitive video games (Dota 2 usually) with my friends. </p> 
-		<p style="font-size: 20px;"> I am currently learning React and Node, so I plan to make changes to this website in the upcoming weeks. </p>
-		<p style="font-size: 20px;"> Currently building a Visualizer for Algorithms 101 (<a href="https://satyam19946.github.io/visualizer")>Visualizer</a>) </p>
-		<p style="font-size: 20px;"> The About Me, Projects, and Contact Me pages are coming soon. </p>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-
-			</div>
-		</div>
-	</div>
+    <script>
+        console.log("Welcome to my website!!")
+    </script>
+    <!---
+        <header>
+            <h1> Satyam Gupta </h1>
+            <nav id="navigation">
+                <ul>
+                    <li> <a href="#aboutme"> About Me </a> </li>
+                    <li> <a href="#projects"> Projects </a> </li>
+                    <li> <a href="#contactme"> Contact Me </a> </li>
+                    <li> <a href="#academics"> Coursework </a>
+                    </ul>
+                </nav>
+            </header>
+        -->
+    <!--- 
+        7 sections in the main section.
+        1. About Section id 
+        2. Experience
+        3 Web Applications
+        4 Machine Learning Projects
+        5 Coursework Projects
+        6. Academic and EC Achievements
+        7. Contact
+    -->
+    <main>
+        <section class="aboutMe">
+            <p class="aboutMeText"> 
+                <strong> Satyam Gupta </strong> 
+                <br/>
+                Computer Science, University of California - San Diego, 2022. 
+                <br/>
+                Front-End developer and Machine Learning addict.
+            </p>
+        </section>
+        <h1 class="projects-heading"> Projects </h1>
+        <section class="mlprojects">
+            <div class="projectCard">
+                <p>
+                    <strong> Slo-fi </strong>
+                    <br/>
+                    <br />
+                    A LSTM neural network trained to generate LOFI music.
+                    <br />
+                    Used: <span class="technical-skill-in-line"> Keras, Tensorflow 2.0 in Python </span> 
+                </p>
+                <img src="images/slofi_project_image.png" alt="Slo-Fi"/>
+            </div>
+            <div class="projectCard">
+                <p>
+                    <strong> Captioning </strong>
+                    <br />
+                    <br />
+                    A ResNet-50 network feeding computed features to an LSTM network generating caption for the image.
+                    <br/>
+                    Used: <span class="technical-skill-in-line">PyTorch in Python</span>
+                </p>
+                <img src="images/captioning_project_image.png" alt="Captioning Image"/>  
+            </div>
+        </section>
+<!-- 
+            <section id="webprojects">
+                <p> Visualizer </p>
+                <p> 
+            </section>
+            
+            <section id="otherprojects">
+                <h4> Other Course Projects (Private Repos) </h4>
+                <ol>
+                    <li> Huffman Encoder/Decoder in C++ </li>
+                    <li> Snake Game in Java </li>
+                    <li> Slot Wheels game in Java </li>
+                </ol>
+            </section> -->
+        <!---
+        <br />
+        <hr />
+        <h1> Course Work </h1>
+        <section id="academics">
+            <h2> Relevant CSE Courses taken. </h2>
+            <ul> 
+                <li> CSE 12. Basic Data Structures and Object-Oriented Design </li>
+                <li> CSE 100. Advanced Data Structures. </li>
+                <li> CSE 101. Design and Analysis of Algorithms </li>
+                <li> CSE 110. Software Engineering. </li>
+                <li> CSE 130. Programming Languages: Principles and Paradigms (WIP) </li>
+                <li> CSE 134B. Web Client Languages </li>
+            </ul>
+        </section>
+        <h1> Contact Me </h1>
+        section id="contactme">
+            <h2> Find me here. </h2>
+            <ul>
+                <li> <a href="https://github.com/satyam19946"> Github </a> </li>
+                <li> <a href="https://linkedin.com/in/satyam19946">LinkedIn</a>
+            </ul>
+            <h2> Leave your details here and I will respond to you: </h2>
+            <form>
+                <fieldset>
+                    <legend>How can I contact you: </legend>
+                    <label for="firstName">Enter First Name: </label>
+                    <input type="text" id="firstName" name="firstName"/>
+                    <label for="emailID">Enter email ID: </label>
+                    <input type="password" id="emailID" name="emailID"/>
+                    <label for="reasonOfContactInput">Any particular reason why you want to talk to me? </label>
+                    <input list="reasonOfContact" name="reasonOfContact" id="reasonOfContactInput"/>
+                    <input type="submit" value="Submit"/>
+                </fieldset>
+            </form>
+            <datalist id="reasonOfContact">
+                <option value="Machine Learning">Machine Learning Opportunities</option>
+                <option value="Front End">Front-End Development Opportunities</option>
+                <option value="Back End">Back-End Development Opportunities </option>
+                <option value="Just To Talk">Just To Talk :)</option>
+                <option value="Other">Other</option>
+            </datalist>
+        </section>
+        <br />
+        <hr />
+    </main>
+    <footer>
+        <p> Author: Satyam Gupta </p>
+        <p> Contact: <a href="mailto:satyamgupta19946@gmail.com"> satyamgupta19946@gmail.com </a>
+    </footer>
+    --->
 </body>
-
-
 </html>
