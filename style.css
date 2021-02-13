@@ -1,8 +1,5 @@
-/* * {
-    font-family: 'Open Sans', sans-serif;
-    font-size: larger;
-} */
-
+/* I have warnings for the variables mentioned here but I chose not to remove them because 
+they help me in modifying only one line of code to see the effects. */
 :root {
     --paragraph-text-size: 1.67rem;
     --strong-text-size: 4.67rem;
@@ -10,22 +7,27 @@
     --font-about-color: #adadad;
     --font-about-heading-color: #ececec;
     --bg-projects-color: #ececec;
+    --font-experience-heading-color: #000000;
     --font-projects-color: #1c1c1c;
     --font-projects-heading-color: #1c1c1c;
-    --project-card-color: #2b2b2b;
+    --project-card-color: #000000;
     --project-card-text-color: #adadad;
     --project-card-heading-size: 3rem;
     --project-card-text-size: 1.67rem;
     --technical-skill-in-line-color: #ececec;
+    --experience-card-color: #000000;
+    --experience-card-text-color: #adadad;
+    --experience-card-heading-size: 3rem;
+    --experience-card-text-size: 1.67rem;
 }
 
 body {
     margin: 0%;
     padding: 0%;
 }
-
 .aboutMe {
-    display: flex;
+    display: grid;
+    grid-template-rows: 90% 10%;
     width: 100%;
     height: 100vh;
     max-width: 1900px;
@@ -38,31 +40,106 @@ body {
     justify-content: center;
     /* background-color: var(--bg-about-color); */
     background-image: url(./images/aboutmetextbg.jpeg);
+    /* image from here - https://images.unsplash.com/photo-1448067686092-1f4f2070baae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 */
     background-position: center;
 }
 
-
-.aboutMeText {
-    font-size: var(--paragraph-text-size, 1.67rem);
+.aboutMe > p {
+    font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
     justify-self: center;
     align-self: center;
     align-items: center;
     justify-items: center;
     text-align: center;
-    text-justify: center;
     margin: 5%;
     color: var(--font-about-color, white);
 }
 
+@keyframes scrolleffect {
+    0%  {transform: translateY(15%);}
+    50% {transform: translateY(-15%);}
+    100% {transform: translateY(15%);}
+}
+
+.scroll_below {
+    align-self: baseline;
+    size: var(--paragraph-text-size, 1.67rem);
+    animation-name: scrolleffect;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
 .aboutMeText > strong {
-    font-size: var(--strong-text-size, 5rem);
+    font-size: 10rem;
     color: var(--font-about-heading-color, white);
 }
 
 .aboutMeImage {
     max-width: 100%;
     max-height: 100%;
+}
+
+.experience-heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--font-experience-heading-color, black);
+    font-size: var(--strong-text-size, 5rem);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(images/bg_light_texture.jpeg);
+    /* https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80 */
+    margin: 0%;
+    padding: 5% 0% 0% 0%;
+}
+
+.experience {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-image: url('./images/bg_light_texture.jpeg');    
+    /* https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80 */
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    margin: 5% 5% 0% 5%;
+    padding: 5%;
+    background-color: var(--experience-card-color, black);
+    max-width: 100%;
+    max-height: 80%;
+    min-width: 100px;
+    min-height: 100px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.experience-card > p {
+    font-size: var(--experience-card-text-size, 1.67rem);
+    color: var(--experience-card-text-color, white)
+}
+
+.experience-card > p > strong {
+    font-size: var(--experience-card-heading-size, 3rem);
+    color: var(--experience-card-text-color, white);
+    text-decoration: underline;
+}
+
+.experience-card > picture {
+    padding: 0%;
+    margin: 0% 0% 0% 10%;
+}
+
+.experience-card > picture > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.experience-card:hover {
+    background-color: #2b2b2b;
 }
 
 .projects-heading {
@@ -72,60 +149,62 @@ body {
     color: var(--font-projects-heading-color, black);
     font-size: var(--strong-text-size, 5rem);
     font-family: 'Open Sans', sans-serif;
-    background-image: url('./images/projectsbg.jpeg');
+    background-image: url('./images/bg_light_texture.jpeg');
+    /* https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80 */
     margin: 0%;
-    padding-top: 5%;
 }
 
 .mlprojects {
     display: grid;
     grid-template-rows: 50% 50%;
-    align-content: center;
-    justify-content: center;
-    background-image: url('./images/projectsbg.jpeg');
+    background-image: url('./images/bg_light_texture.jpeg');
+    /* https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80 */
 }
 
-/* .webprojects {
+.webprojects {
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 5%;
-} */
+    grid-template-rows: 50% 50%;
+    background-image: url('./images/bg_light_texture.jpeg');
+    /* https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80 */
+}
 
-/* .otherprojects {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 5%;
-} */
-
-
-
-.projectCard {
+.project-card {
     display: grid;
     grid-template-columns: 50% 50%;
     border-radius: 10px;
-    margin: 5%;
+    margin: 5% 5% 0% 5%;
     padding: 5%;
     background-color: var(--project-card-color);
-    max-width: 60%;
-    cursor: pointer;
+    max-width: 100%;
+    max-height: 80%;
+    min-width: 100px;
+    min-height: 100px;
     align-content: center;
     justify-content: center;
     align-self: center;
 }
 
-.projectCard > p > strong {
-    font-size: var(--project-card-heading-size, 3rem);
-    color: var(--project-card-text-color, white);
+.project-card:hover{
+    background-color: #2b2b2b;
 }
 
-.projectCard > p {
+.project-card > p > strong, .project-card > p > strong > * {
+    font-size: var(--project-card-heading-size, 3rem);
+    color: var(--project-card-text-color, white);
+    text-decoration: underline;
+}
+
+.project-card > p {
     font-size: var(--project-card-text-size, 1.67rem);
     color: var(--project-card-text-color, white)
 }
 
-.projectCard > img {
+.project-card > picture {
     padding: 0%;
     margin: 0% 0% 0% 10%;
+}
+
+.project-card > picture > img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -133,4 +212,45 @@ body {
 .technical-skill-in-line {
     font-family: 'Open Sans', sans-serif;
     color: var(--technical-skill-in-line-color, white);
+}
+
+.contactme-heading {
+    display: flex;
+    background-color: black;
+    color: #ececec;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+    padding-top: 2%;
+    font-family: 'Open sans', sans-serif;
+}
+
+.contactme {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    max-width: 100%;
+    min-height: 20%;
+    margin: 0%;
+    padding: 0% 0% 5% 0%;
+}
+
+.social-links, .social-links > a {
+    justify-self: center;
+    align-self: center;
+    color: #ececec;
+    font-size: var(--paragraph-text-size, 1.67rem);
+    font-family: 'Open sans', sans-serif;
+    line-height: 2rem;
+    padding: 0%;
+}
+
+.made-with-love {
+    justify-self: center;
+    align-self: center;
+    color: #ececec;
+    font-size: var(--paragraph-text-size, 1.67rem);
+    font-family: 'Open sans', sans-serif;
+    line-height: 2rem;
+    padding: 0%;
 }

@@ -12,130 +12,136 @@
 </head>
 <body>
     <script>
-        console.log("Welcome to my website!!")
+        console.log("Welcome to my website!! If you are looking at this screen, then checkout my github https://github.com/satyam19946")
     </script>
-    <!---
-        <header>
-            <h1> Satyam Gupta </h1>
-            <nav id="navigation">
-                <ul>
-                    <li> <a href="#aboutme"> About Me </a> </li>
-                    <li> <a href="#projects"> Projects </a> </li>
-                    <li> <a href="#contactme"> Contact Me </a> </li>
-                    <li> <a href="#academics"> Coursework </a>
-                    </ul>
-                </nav>
-            </header>
-        -->
-    <!--- 
-        7 sections in the main section.
-        1. About Section id 
-        2. Experience
-        3 Web Applications
-        4 Machine Learning Projects
-        5 Coursework Projects
-        6. Academic and EC Achievements
-        7. Contact
-    -->
     <main>
-        <section class="aboutMe">
+        <div class="aboutMe">
             <p class="aboutMeText"> 
                 <strong> Satyam Gupta </strong> 
                 <br/>
-                Computer Science, University of California - San Diego, 2022. 
+                Computer Science, UCSD 2022. 
                 <br/>
-                Front-End developer and Machine Learning addict.
+                Front-End.  Machine-Learning.
             </p>
-        </section>
-        <h1 class="projects-heading"> Projects </h1>
-        <section class="mlprojects">
-            <div class="projectCard">
+            <p class="scroll_below"> Scroll for more <br /> ↓ </p>
+        </div>
+        <h1 class="experience-heading"> Experience </h1>
+        <div class="experience">
+            <div class="experience-card">
                 <p>
-                    <strong> Slo-fi </strong>
-                    <br/>
+                    <strong> Event Lead - Association of Computing Machinery, UCSD </strong>
                     <br />
-                    A LSTM neural network trained to generate LOFI music.
                     <br />
-                    Used: <span class="technical-skill-in-line"> Keras, Tensorflow 2.0 in Python </span> 
+                    Taught Reinforcement Learning and Neural Networks workshops.
+                    <br />
+                    Led reading groups for state of the art Machine Learning papers.
                 </p>
-                <img src="images/slofi_project_image.png" alt="Slo-Fi"/>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small_width_blank_image.png"/>
+                    <img src="images/acm.png" alt="ACM at UCSD logo">
+                </picture>
             </div>
-            <div class="projectCard">
+            <div class="experience-card">
+                <p>
+                    <strong> Logistics Director - Tech Comm </strong>
+                    <br />
+                    <br />
+                    Created a Discord bot in <span class="technical-skill-in-line"> Python </span> to pull raffles using Google Sheets API.
+                </p>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small_width_blank_image.png"/>
+                    <img src="images/SixthTechCommLogoWhite.png" alt="Sixth College Tech Comm"/>
+                </picture>
+            </div>
+        </div>
+        <h1 class="projects-heading"> Projects </h1>
+        <div class="webprojects">
+            <div class="project-card">
+                <p>
+                    <strong> Sunflower </strong>
+                    <br />
+                    <br />
+                    In a team of 11, built a Google Chrome Extension to increase online productivity.
+                    <br />
+                    Acted as the Senior System Analyst and created the Use Cases and User Story artifact.
+                    <br />
+                    Used: <span class="technical-skill-in-line">HTML5, CSS3, JavaScript, Firebase, Node.js, and React.js</span>
+                </p>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small_width_blank_image.png"/>
+                    <img src="images/sunflower_project_image.png" alt="Sunflower project details"/>
+                </picture>
+            </div>
+            <div class="project-card">
+                <p>
+                    <strong> <a href="https://satyam19946.github.io/visualizer">Visualizer </a></strong>
+                    <br />
+                    <br />
+                    A visualizer for the different CSE algorithms taught in lower division classes.
+                    <br />
+                    Built from scratch using React.js implementing the concept of Stateful classes and functional components.
+                    <br />
+                    Used: <span class="technical-skill-in-line">HTML5, CSS3, JavaScript, and React.js</span>
+                </p>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small_width_blank_image.png"/>
+                    <img src="images/visualizer_project_image.png" alt="Visualizer project snapshot"/>
+                </picture>
+            </div>
+        </div>
+        <div class="mlprojects">
+            <div class="project-card">
                 <p>
                     <strong> Captioning </strong>
                     <br />
                     <br />
                     A ResNet-50 network feeding computed features to an LSTM network generating caption for the image.
                     <br/>
+                    ResNet-50 breaks the image entered into edges and distinguishing features. 
+                    <br />
+                    The LSTM network takes this array of broken down features and tries to generate a caption for the image.
+                    <br/>
                     Used: <span class="technical-skill-in-line">PyTorch in Python</span>
                 </p>
-                <img src="images/captioning_project_image.png" alt="Captioning Image"/>  
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small_width_blank_image.png"/>
+                    <img src="images/captioning_project_image.png" alt="Captioning Project Demo"/>
+                </picture>  
             </div>
-        </section>
-<!-- 
-            <section id="webprojects">
-                <p> Visualizer </p>
-                <p> 
-            </section>
-            
-            <section id="otherprojects">
-                <h4> Other Course Projects (Private Repos) </h4>
-                <ol>
-                    <li> Huffman Encoder/Decoder in C++ </li>
-                    <li> Snake Game in Java </li>
-                    <li> Slot Wheels game in Java </li>
-                </ol>
-            </section> -->
-        <!---
-        <br />
-        <hr />
-        <h1> Course Work </h1>
-        <section id="academics">
-            <h2> Relevant CSE Courses taken. </h2>
-            <ul> 
-                <li> CSE 12. Basic Data Structures and Object-Oriented Design </li>
-                <li> CSE 100. Advanced Data Structures. </li>
-                <li> CSE 101. Design and Analysis of Algorithms </li>
-                <li> CSE 110. Software Engineering. </li>
-                <li> CSE 130. Programming Languages: Principles and Paradigms (WIP) </li>
-                <li> CSE 134B. Web Client Languages </li>
-            </ul>
-        </section>
-        <h1> Contact Me </h1>
-        section id="contactme">
-            <h2> Find me here. </h2>
-            <ul>
-                <li> <a href="https://github.com/satyam19946"> Github </a> </li>
-                <li> <a href="https://linkedin.com/in/satyam19946">LinkedIn</a>
-            </ul>
-            <h2> Leave your details here and I will respond to you: </h2>
-            <form>
-                <fieldset>
-                    <legend>How can I contact you: </legend>
-                    <label for="firstName">Enter First Name: </label>
-                    <input type="text" id="firstName" name="firstName"/>
-                    <label for="emailID">Enter email ID: </label>
-                    <input type="password" id="emailID" name="emailID"/>
-                    <label for="reasonOfContactInput">Any particular reason why you want to talk to me? </label>
-                    <input list="reasonOfContact" name="reasonOfContact" id="reasonOfContactInput"/>
-                    <input type="submit" value="Submit"/>
-                </fieldset>
-            </form>
-            <datalist id="reasonOfContact">
-                <option value="Machine Learning">Machine Learning Opportunities</option>
-                <option value="Front End">Front-End Development Opportunities</option>
-                <option value="Back End">Back-End Development Opportunities </option>
-                <option value="Just To Talk">Just To Talk :)</option>
-                <option value="Other">Other</option>
-            </datalist>
-        </section>
-        <br />
-        <hr />
+            <div class="project-card">
+                <p>
+                    <strong> Slo-fi </strong>
+                    <br/>
+                    <br />
+                    A LSTM neural network trained to generate LOFI music.
+                    <br />
+                    The network takes an input of a sequence of musical notes and tries to predict the next probable note.
+                    <br />
+                    Used: <span class="technical-skill-in-line"> Keras, Tensorflow 2.0 in Python </span> 
+                </p>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small_width_blank_image.png"/>
+                    <img src="images/slofi_project_image.png" alt="Slo-fi project abstract"/>
+                </picture>
+            </div>
+        </div>
+        <h1 class="contactme-heading"> Connect with me </h1>
+        <div class="contactme">
+            <p class="social-links">
+                <a href="https://github.com/satyam19946"> Github </a> 
+                <br />
+                <a href="https://linkedin.com/in/satyam19946">LinkedIn</a>
+                <br />
+                <a href="https://twitter.com/satyam19946">Twitter</a>
+                <br />
+                <a href="https://facebook.com/satyam19946">Facebook</a>
+            </p>
+            <p class="made-with-love"> 
+                Made with love ❤️
+                <br />
+                <strong> Satyam Gupta. </strong>
+            </p>
+        </div>
     </main>
-    <footer>
-        <p> Author: Satyam Gupta </p>
-        <p> Contact: <a href="mailto:satyamgupta19946@gmail.com"> satyamgupta19946@gmail.com </a>
-    </footer>
-    --->
 </body>
 </html>
