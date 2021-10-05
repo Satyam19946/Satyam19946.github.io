@@ -1,7 +1,7 @@
 
 /* Add your profile image here */
 .Photo{
-    background-image: url('https://images.pexels.com/photos/3799821/pexels-photo-3799821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: url('IMG_3515.JPG');
 }
 /* Projects Photo */
 .project1{
@@ -28,16 +28,23 @@
     background-image: url('https://via.placeholder.com/400x600.png?text=Project+six');
     cursor: none;
 }
-/* Miscelaneous Activities photo */
-.misc1{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+one');
-    cursor: none;
+.sigfig{
+    background-image: url('sigfig.png');
+    cursor: pointer;
 }
-.misc2{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+two');
-    cursor: none;
+.ucsd{
+    background-image: url('csetutor.png');
+    cursor: pointer;
 }
-.misc3{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+three');
-    cursor: none;
+.acmai{
+    background-image: url('acmai.png');
+    cursor: pointer;
+}
+.tbp{
+    background-image: url('tbp.png');
+    cursor: pointer;
+}
+.sctc{
+    background-image: url('sctc.png');
+    cursor: pointer;
 }
