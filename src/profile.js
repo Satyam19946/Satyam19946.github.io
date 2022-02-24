@@ -114,7 +114,6 @@ const miscellaneous = [
     url: "https://www.sigfig.com/site/#/home/am",
     skills: ["Teamwork, Problem Solving, Adaptability"],
     tech_skills: ["Python, JavaScript, React, Django"],
-    description: 'Helo',
   },
   {
     // Add image in './styles/images.css' in #misc2
@@ -129,8 +128,8 @@ const miscellaneous = [
     id: "acmai",
     name: "Event Lead @ ACM-AI",
     url: "https://ai.acmucsd.com/about",
-    skills: ["Confidence, Collaboration, Mentorship"],
-    tech_skills: ["Python, Tensorflow, Deep Learning, Reinforcement Learning, Public Speaking"],
+    skills: ["Confidence, Collaboration, Mentorship, Public Speaking"],
+    tech_skills: ["Python, Tensorflow, Deep Learning, Reinforcement Learning"],
   },
   {
     id: "tbp",
@@ -142,7 +141,7 @@ const miscellaneous = [
   {
     id: "sctc",
     name: "Logistics Director @ Sixth College Tech Comm",
-    url: "",
+    url: "https://wintergamefest.org",
     skills: ["Management Skills, Goal Setting, Delegation"],
   }
 ];
@@ -164,7 +163,7 @@ const social = {
   twitter: "https://twitter.com/satyam19946",
   instagram: "https://instagram.com/satyam19946",
   linkedin: "https://linkedin.com/in/satyam19946",
-  resume: "",
+  resume: "https://sagupta.tech/resume.pdf",
 };
 // Dont change anything here
 export {
