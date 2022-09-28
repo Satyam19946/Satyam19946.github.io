@@ -108,6 +108,13 @@ const projects = [
 const section4Title = "Experiences";
 const miscellaneous = [
   {
+   id: "f5",
+   name: "Software Engineer @ F5",
+   url: "https://www.f5.com/",
+   skills: ["Communication, Problem Solving, Debugging"],
+   tech_skills: ["C, gdb, cmd"],
+  },
+  {
     // Add image in './styles/images.css' in #misc1
     id: "sigfig",
     name: "SWE Intern @ SigFig",
@@ -151,7 +158,7 @@ const miscellaneous = [
 const section5Title = "Get in Touch";
 const contact = {
   pitch:
-    "Feel free to fill this form out to reach out to me about opportunities or just to get in touch. Here are my other social/professional links. If you think that our interests match, hit me up and we could definitely set up a time to talk about tech, anime, movies, music, or anything you would like!!",
+    "Fill this form out to reach out to me about opportunities or just to get in touch. Here are my other social/professional links. If you think that our interests match, hit me up and we could definitely set up a time to talk about tech, anime, movies, music, or anything you would like!!",
   copyright: "",
   contactUrl: "https://formspree.io/f/mvodywrb",
 };

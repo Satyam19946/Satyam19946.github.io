@@ -28,6 +28,10 @@
     background-image: url('https://via.placeholder.com/400x600.png?text=Project+six');
     cursor: none;
 }
+.f5{
+    background-image: url('f5.png');
+    cursor: pointer;
+}
 .sigfig{
     background-image: url('sigfig.png');
     cursor: pointer;
